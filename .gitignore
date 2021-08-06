@@ -1,0 +1,11 @@
+### .gitignore
+
+## No temp stuff
+.~lock*
+.metadata
+
+## No exports which can be exported always
+gerber/
+
+## Forget archive
+Z-Archive
