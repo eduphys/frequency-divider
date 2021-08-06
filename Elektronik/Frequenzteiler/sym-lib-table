@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name PulserCounter)(type Legacy)(uri ${KIPRJMOD}/libraries/PulserCounter.lib)(options "")(descr ""))
+  (lib (name Power-TTL)(type Legacy)(uri ${KIPRJMOD}/libraries/Power.lib)(options "")(descr ""))
+  (lib (name Translators)(type Legacy)(uri ${KIPRJMOD}/libraries/Translators.lib)(options "")(descr ""))
+  (lib (name ARMs)(type Legacy)(uri ${KIPRJMOD}/libraries/ARMs.lib)(options "")(descr ""))
+  (lib (name Opendous)(type Legacy)(uri ${KIPRJMOD}/libraries/opendous.lib)(options "")(descr ""))
+  (lib (name Protectors)(type Legacy)(uri ${KIPRJMOD}/libraries/Protectors.lib)(options "")(descr ""))
+  (lib (name Frequenzteiler-rescue)(type Legacy)(uri ${KIPRJMOD}/Frequenzteiler-rescue.lib)(options "")(descr ""))
+)

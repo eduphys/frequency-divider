@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Powersplitter-rescue)(type Legacy)(uri ${KIPRJMOD}/Powersplitter-rescue.lib)(options "")(descr ""))
+)

@@ -1,0 +1,160 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Powersplitter"
+Date "2020-04-25"
+Rev "0.9"
+Comp "ETH Zürich, Eduphys"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5EA1C83D
+P 950 1200
+F 0 "J1" H 1050 1082 50  0000 L CNN
+F 1 "Input" H 1050 1173 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 950 1200 50  0001 C CNN
+F 3 " ~" H 950 1200 50  0001 C CNN
+	1    950  1200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5EA1D40E
+P 2900 1200
+F 0 "J2" H 3000 1175 50  0000 L CNN
+F 1 "Output1" H 3000 1084 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 2900 1200 50  0001 C CNN
+F 3 " ~" H 2900 1200 50  0001 C CNN
+	1    2900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 5EA1D831
+P 1900 1950
+F 0 "J3" V 1782 2050 50  0000 L CNN
+F 1 "Output2" V 1873 2050 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 1900 1950 50  0001 C CNN
+F 3 " ~" H 1900 1950 50  0001 C CNN
+	1    1900 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EA201AC
+P 1450 1200
+F 0 "R1" V 1243 1200 50  0000 C CNN
+F 1 "R" V 1334 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1380 1200 50  0001 C CNN
+F 3 "~" H 1450 1200 50  0001 C CNN
+	1    1450 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5EA208B8
+P 2350 1200
+F 0 "R2" V 2143 1200 50  0000 C CNN
+F 1 "R" V 2234 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2280 1200 50  0001 C CNN
+F 3 "~" H 2350 1200 50  0001 C CNN
+	1    2350 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5EA211FC
+P 1900 1450
+F 0 "R3" H 1830 1404 50  0000 R CNN
+F 1 "R" H 1830 1495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1830 1450 50  0001 C CNN
+F 3 "~" H 1900 1450 50  0001 C CNN
+	1    1900 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 1200 1900 1200
+Wire Wire Line
+	2500 1200 2700 1200
+Wire Wire Line
+	1300 1200 1150 1200
+Wire Wire Line
+	1900 1300 1900 1200
+Connection ~ 1900 1200
+Wire Wire Line
+	1900 1200 2200 1200
+Wire Wire Line
+	1900 1750 1900 1600
+$Comp
+L power:GND #PWR0101
+U 1 1 5EA222C2
+P 2900 1400
+F 0 "#PWR0101" H 2900 1150 50  0001 C CNN
+F 1 "GND" H 2905 1227 50  0000 C CNN
+F 2 "" H 2900 1400 50  0001 C CNN
+F 3 "" H 2900 1400 50  0001 C CNN
+	1    2900 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5EA22658
+P 950 1400
+F 0 "#PWR0102" H 950 1150 50  0001 C CNN
+F 1 "GND" H 955 1227 50  0000 C CNN
+F 2 "" H 950 1400 50  0001 C CNN
+F 3 "" H 950 1400 50  0001 C CNN
+	1    950  1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5EA22FED
+P 1700 1950
+F 0 "#PWR0103" H 1700 1700 50  0001 C CNN
+F 1 "GND" V 1705 1822 50  0000 R CNN
+F 2 "" H 1700 1950 50  0001 C CNN
+F 3 "" H 1700 1950 50  0001 C CNN
+	1    1700 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EA47871
+P 3800 1250
+F 0 "#FLG0101" H 3800 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 3800 1423 50  0000 C CNN
+F 2 "" H 3800 1250 50  0001 C CNN
+F 3 "~" H 3800 1250 50  0001 C CNN
+	1    3800 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5EA47DB1
+P 3800 1250
+F 0 "#PWR0104" H 3800 1000 50  0001 C CNN
+F 1 "GND" H 3805 1077 50  0000 C CNN
+F 2 "" H 3800 1250 50  0001 C CNN
+F 3 "" H 3800 1250 50  0001 C CNN
+	1    3800 1250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	600  2300 4100 2300
+Wire Notes Line
+	4100 2300 4100 600 
+Wire Notes Line
+	4100 600  600  600 
+Wire Notes Line
+	600  600  600  2300
+Text Notes 650  700  0    50   ~ 0
+Power divider
+$EndSCHEMATC
