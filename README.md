@@ -5,3 +5,5 @@ The frequency divider can operate up to 4 GHz and is optimized for low timing ji
 
 The divider can be configured for a division factor of (2^a)(2^b) with a=0...3 and b=0...5.
 
+## CAUTION:
+The NB6N239S chip is not manufactured anymore. It is highly recommended to re-design the board!
